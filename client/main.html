@@ -1,0 +1,32 @@
+<head>
+  <title>rede-hike</title>
+</head>
+
+<template name="INICIO">
+
+  <h1>Conecte-se com o mundo.</h1>
+  <p>Veja fotos e status das pessoas que segue.</p>
+  <p>compartilhe as novidades no seu perfil</p>
+  <p>Sigas seus amigos ao redor do mundo</p>
+  <p><a href="#">Link</a></p>
+</template>
+<template name="SOBRE">
+
+  <H1>SOBRE</H1>
+  <h2>Nossa visão</h2>
+  <p>Acesse o aplicativo dos Correios e leia o código 2D ao lado. Você não precisará digitar o código do objeto e poderá salvar na sua lista de favoritos.</p>
+
+  <h2>Nossos Valores</h2>
+  <p>Acesse o aplicativo dos Correios e leia o código 2D ao lado. Você não precisará digitar o código do objeto e poderá salvar na sua lista de favoritos.</p>
+ </template>
+
+ <template name="cabeçalho">
+  <a href="SOBRE">sobre</a>
+   <a href="/">INICIO</a>
+ </template>
+
+<template name="LayoutPrincipal">
+  {{> cabeçalho}}
+  {{> Template.dynamic template=main}}
+
+</template>
